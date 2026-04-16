@@ -32,8 +32,8 @@ function App() {
             <Navbar activeSection={activeSection} />
             <main>
                 <section id="home"><Hero /></section>
-                <section id="skills"><Skills /></section>
                 <section id="projects"><Projects /></section>
+                <section id="skills"><Skills /></section>
                 <section id="contact"><Contact /></section>
             </main>
         </div>

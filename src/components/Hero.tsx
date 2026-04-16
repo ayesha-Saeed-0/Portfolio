@@ -1,6 +1,5 @@
 import React from 'react';
-// ⬇️  Place your photo at src/assets/profile.jpg
-import profilePic from '../assets/profile.jpg';
+
 
 const Hero: React.FC = () => {
     const roles = ['Frontend Developer', 'AI / ML Engineer', 'NLP Enthusiast', 'React & TypeScript'];
@@ -225,89 +224,11 @@ const Hero: React.FC = () => {
                             width: '220px',
                             height: '220px',
                         }}>
-                            {/* Decorative ring */}
-                            <div style={{
-                                position: 'absolute',
-                                inset: '-4px',
-                                borderRadius: '50%',
-                                background: 'linear-gradient(135deg, #7c3aed, #60a5fa, #f472b6)',
-                                padding: '3px',
-                                animation: 'float 4s ease-in-out infinite',
-                            }}>
-                                <div style={{
-                                    width: '100%',
-                                    height: '100%',
-                                    borderRadius: '50%',
-                                    background: 'var(--bg-primary)',
-                                }} />
-                            </div>
 
-                            {/* Photo or placeholder */}
-                            <div style={{
-                                position: 'absolute',
-                                inset: '4px',
-                                borderRadius: '50%',
-                                overflow: 'hidden',
-                                background: 'linear-gradient(135deg, rgba(124,58,237,0.3), rgba(79,70,229,0.3))',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                            }}>
-                                {/* OPTION A — Uncomment this line after adding your photo to src/assets/profile.jpg */}
-                                {<img src={profilePic} alt="Ayesha Saeed" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
 
-                                {/* OPTION B — Placeholder shown until you add your photo */}
-                                {/* <span style={{
-                                    fontSize: '72px',
-                                    fontWeight: 700,
-                                    color: 'var(--accent-bright)',
-                                    fontFamily: 'var(--font-main)',
-                                    lineHeight: 1,
-                                }}>
 
-                                </span> */}
-                            </div>
 
-                            {/* Floating badges */}
-                            <div style={{
-                                position: 'absolute',
-                                bottom: '-8px',
-                                right: '-16px',
-                                background: 'var(--bg-card)',
-                                border: '1px solid rgba(167,139,250,0.2)',
-                                borderRadius: '10px',
-                                padding: '8px 14px',
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: '8px',
-                                fontSize: '12px',
-                                color: 'var(--text-secondary)',
-                                fontFamily: 'var(--font-mono)',
-                                whiteSpace: 'nowrap',
-                            }}>
-                                <span style={{ color: 'var(--green)', fontSize: '16px' }}>⚡</span>
-                                React + AI
-                            </div>
 
-                            <div style={{
-                                position: 'absolute',
-                                top: '-8px',
-                                left: '-24px',
-                                background: 'var(--bg-card)',
-                                border: '1px solid rgba(96,165,250,0.2)',
-                                borderRadius: '10px',
-                                padding: '8px 14px',
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: '8px',
-                                fontSize: '12px',
-                                color: 'var(--text-secondary)',
-                                fontFamily: 'var(--font-mono)',
-                                whiteSpace: 'nowrap',
-                            }}>
-                                <span style={{ color: 'var(--blue)', fontSize: '16px' }}>🧠</span>
-                                NLP / ML
-                            </div>
                         </div>
                     </div>
                 </div>
